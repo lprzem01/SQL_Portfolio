@@ -2,9 +2,9 @@
 
 ## Overview
 
-This repository contains a collection of SQL projects demonstrating data exploration, cleaning, transformation, and analytical querying techniques across a variety of datasets.
+This repository contains SQL projects demonstrating data exploration, cleaning, transformation, and analytical querying techniques using real-world datasets.
 
-The portfolio showcases practical SQL skills including data extraction, aggregation, filtering, joins, subqueries, and business-oriented data analysis.
+The portfolio showcases practical SQL skills including data validation, aggregation, filtering, joins, subqueries, view creation, and business-oriented data analysis.
 
 ---
 
@@ -28,85 +28,86 @@ The portfolio showcases practical SQL skills including data extraction, aggregat
 
 ### SQL Techniques
 
-- INNER JOIN
-- LEFT JOIN
-- RIGHT JOIN
+- Data Cleaning
+- View Creation
+- Aggregate Analysis
 - Subqueries
-- Common Table Expressions (CTEs)
-- CASE statements
-- Data cleaning and transformation
+- Date Functions
+- Business Reporting Queries
 
 ---
 
 ## Projects
 
-### Project 1: [Project Name]
+### Kickstarter Campaign Analysis
 
-**Objective**
+#### Objective
 
-Brief description of the business question or dataset.
+Analyse Kickstarter crowdfunding campaign data to identify trends in project success, funding performance, category popularity, and geographic distribution.
 
-**Skills Used**
+#### Dataset
 
-- SQL
+The dataset contains over 320,000 Kickstarter projects and includes information such as:
+
+- Project name
+- Category
+- Main category
+- Funding goal
+- Amount pledged
+- Project status
+- Number of backers
+- Launch and deadline dates
+- Country and currency information
+
+#### Skills Used
+
 - Data Cleaning
-- Aggregation
-- Joins
+- Data Validation
+- Aggregate Functions
+- GROUP BY Analysis
+- View Creation
+- Subqueries
+- Date Functions
 
-**Key Insights**
+#### Analysis Performed
 
-- Insight 1
-- Insight 2
-- Insight 3
+- Inspected database structure and data quality
+- Identified and corrected missing values
+- Examined project category distributions
+- Analysed successful versus unsuccessful projects
+- Identified projects with the highest number of backers
+- Calculated yearly crowdfunding totals
+- Compared project activity across countries
+- Created reusable SQL views for reporting
 
----
+#### Key Insights
 
-### Project 2: [Project Name]
+- Identified the most common Kickstarter project categories.
+- Determined which categories generated the highest number of successful campaigns.
+- Analysed crowdfunding trends across multiple years.
+- Compared project volumes across different countries.
+- Investigated funding performance using pledged and USD pledged amounts.
 
-**Objective**
+#### SQL Views Created
 
-Brief description of the analysis.
+##### Main Categories View
 
-**Skills Used**
+Summarises successful projects by category and ranks them by frequency.
 
-- SQL
-- Exploratory Data Analysis
-- Data Transformation
+##### Yearly Pledges View
 
-**Key Insights**
+Calculates total USD pledged by year to identify funding trends over time.
 
-- Insight 1
-- Insight 2
-- Insight 3
+##### Countries View
 
----
-
-### Project 3: [Project Name]
-
-**Objective**
-
-Brief description of the analysis.
-
-**Skills Used**
-
-- SQL
-- Reporting
-- Business Intelligence
-
-**Key Insights**
-
-- Insight 1
-- Insight 2
-- Insight 3
+Ranks countries based on the number of Kickstarter projects created.
 
 ---
 
 ## Technologies
 
 - SQL
-- MySQL / PostgreSQL / SQL Server (update as appropriate)
-- Excel
-- Power BI (if used)
+- MySQL
 
 ---
 
@@ -114,15 +115,8 @@ Brief description of the analysis.
 
 ```text
 SQL_Portfolio/
-├── Project_1/
-│   ├── queries.sql
-│   └── README.md
-├── Project_2/
-│   ├── queries.sql
-│   └── README.md
-├── Project_3/
-│   ├── queries.sql
-│   └── README.md
+├── KS_project.sql
+├── KS_report.pbix
 └── README.md
 ```
 
@@ -130,23 +124,23 @@ SQL_Portfolio/
 
 ## Learning Objectives
 
-This portfolio was created to strengthen practical SQL skills and demonstrate the ability to:
+This project was completed to develop practical SQL skills and demonstrate the ability to:
 
-- Query large datasets efficiently
-- Clean and transform raw data
-- Generate actionable insights
-- Support business decision-making using data
+- Explore large datasets
+- Clean and validate data
+- Generate business insights using SQL
+- Create reusable reporting views
 - Apply analytical thinking to real-world datasets
 
 ---
 
 ## Future Improvements
 
-Planned additions include:
+Planned enhancements include:
 
-- Advanced window functions
+- Window Functions
+- Common Table Expressions (CTEs)
+- Advanced KPI calculations
+- Funding success prediction analysis
+- Power BI dashboard expansion
 - Query optimisation techniques
-- Database design projects
-- Stored procedures and functions
-- SQL integration with Power BI and Python
-
